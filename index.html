@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo pre-entrega</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- MENÚ SUPERIOR, ENCABEZADO Y LOG IN -->
+    
+    <header class="header">
+        <img class="header__logo" src="imagenes/logo.png" alt="Logo de la empresa">
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li><a class="header__nav-link" href="index.html">Inicio</a></li>
+                <li><a class="header__nav-link" href="catalogo.html">Catálogo</a></li>
+                <li><a class="header__nav-link" href="about.html">About</a></li>
+                <li><a class="header__nav-link" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="header__icons">
+            <button type="button" class="header__contenedor-carrito" aria-label="Ver carrito de compras">
+                <span class="material-symbols-outlined" id="header__icon-cart">shopping_cart</span>
+                <span class="header__contador-carrito">0</span>
+            </button>
+            <!-- <span class="material-symbols-outlined" id="header__icon-login">login</span> -->
+        </div>
+    </header>
+
+    <!-- CUERPO PRINCIPAL DEL SITIO WEB -->
+
+    <main class="main">
+        <!-- HERO -->
+        <section class="hero">
+            <h1 class="hero__title">Bienvenido a nuestra tienda</h1>
+            <p class="hero__description">Los mejores productos electrónicos y tecnológicos en su solo lugar</p>
+            <a href="catalogo.html" class="hero__button">Ver Catálogo</a>
+        </section>
+
+        <!-- PRODUCTOS -->
+        <section class="products">
+            <h2 class="products__title">Productos Destacados</h2>
+            <div class="products__container">
+
+                <article class="card">
+                    <img class="card__image" src="imagenes/auriculares.jpg" alt="imagen de auriculares">
+                    <div class="card__content">
+                        <p class="card__brand">Sony</p>
+                        <h3 class="card__name">Auriculares Inalámbricos WH-100</h3>
+                        <p class="card__description">Bluetooth 5.0, cancelación de ruido y 30 horas de batería.</p>
+                        <p class="card__price">$89.999</p>
+                        <button class="card__button" type="button">Agregar al carrito</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img class="card__image" src="imagenes/mouse.jpeg" alt="imagen de mouse">
+                    <div class="card__content">
+                        <p class="card__brand">Logitech</p>
+                        <h3 class="card__name">Mouse inalámbrico M170</h3>
+                        <p class="card__description">Conexión inalámbrica de 2,4 GHz, diseño ambidiestro y hasta 12 meses de batería.</p>
+                        <p class="card__price">$14.999</p>
+                        <button class="card__button" type="button">Agregar al carrito</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img class="card__image" src="imagenes/celular.webp" alt="imagen de celular">
+                    <div class="card__content">
+                        <p class="card__brand">Samsung</p>
+                        <h3 class="card__name">Celular Galaxy A15</h3>
+                        <p class="card__description">Pantalla Super AMOLED de 6,5 pulgadas, cámara principal de 50 MP y batería de 5.000 mAh.</p>
+                        <p class="card__price">$299.999</p>
+                        <button class="card__button" type="button">Agregar al carrito</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img class="card__image" src="imagenes/teclado.webp" alt="imagen de teclado">
+                    <div class="card__content">
+                        <p class="card__brand">Redragon</p>
+                        <h3 class="card__name">Teclado mecánico Kumara K552</h3>
+                        <p class="card__description">Formato compacto, switches mecánicos, iluminación RGB y estructura resistente.</p>
+                        <p class="card__price">$69.999</p>
+                        <button class="card__button" type="button">Agregar al carrito</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img class="card__image" src="imagenes/monitor.webp" alt="imagen de monitor">
+                    <div class="card__content">
+                        <p class="card__brand">LG</p>
+                        <h3 class="card__name">Monitor Full HD de 24 pulgadas</h3>
+                        <p class="card__description">Panel IPS con resolución 1920 × 1080, colores nítidos y tecnología para reducir la fatiga visual.</p>
+                        <p class="card__price">$189.999</p>
+                        <button class="card__button" type="button">Agregar al carrito</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- RESEÑAS -->
+        <section class="reviews">
+            <h2 class="reviews__title">Reseñas de Clientes</h2>
+            <div class="reviews__container">
+
+                <article class="review-card">
+                    <p class="review-card__rating">★★★★★</p>
+                    <p class="review-card__text">Excelente calidad de sonido y la batería dura todo el día. Llegaron en tiempo y forma.</p>
+                    <p class="review-card__author">Martina G.</p>
+                    <p class="review-card__product">Auriculares Inalámbricos WH-100</p>
+                </article>
+
+                <article class="review-card">
+                    <p class="review-card__rating">★★★★☆</p>
+                    <p class="review-card__text">El monitor se ve muy bien para el precio. Solo le faltaría un soporte más firme.</p>
+                    <p class="review-card__author">Lucas P.</p>
+                    <p class="review-card__product">Monitor 24" Full HD 75Hz</p>
+                </article>
+
+                <article class="review-card">
+                    <p class="review-card__rating">★★★★★</p>
+                    <p class="review-card__text">Muy buena atención y el celular funciona perfecto. Lo recomiendo.</p>
+                    <p class="review-card__author">Sofía R.</p>
+                    <p class="review-card__product">Moto G54 128GB</p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section class="contact">
+            <h2 class="contact__title">Contáctanos</h2>
+            <form class="contact__form" action="https://formspree.io/f/mvkgeyyl" method="POST">
+                <input class="contact__form-name" type="text" name="nombre" placeholder="Nombre" required>
+                <input class="contact__form-email" type="email" name="email" placeholder="Correo electrónico" required>
+                <textarea class="contact__form-message" name="mensaje" placeholder="Mensaje" required></textarea>
+                <button class="contact__form-button" type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- PIE DEL SITIO WEB -->
+    
+    <footer class="footer">
+        <nav class="footer__nav">
+            <ul class="footer__nav-list">
+                <li class="footer__nav-item"><a class="footer__nav-link" href="">Contacto</a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="">Envíos</a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="">FAQs</a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="">Términos y Condiciones</a></li>
+            </ul>
+        </nav>
+        <p class="footer__copyright">© 2026 AAT. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+<footer>
+
+</footer>
+</html>
