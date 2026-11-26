@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Compra</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/finalizar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- MENÚ SUPERIOR, ENCABEZADO Y LOG IN -->
+    
+    <header class="header">
+        <img class="header__logo" src="imagenes/logo.png" alt="Logo de la empresa">
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li><a class="header__nav-link" href="index.html">Inicio</a></li>
+                <li><a class="header__nav-link" href="catalogo.html">Catálogo</a></li>
+                <li><a class="header__nav-link" href="about.html">About</a></li>
+                <li><a class="header__nav-link" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="header__icons">
+            <button type="button" class="header__contenedor-carrito" aria-label="Ver carrito de compras">
+                <span class="material-symbols-outlined" id="header__icon-cart">shopping_cart</span>
+                <span class="header__contador-carrito" id="contador-carrito">0</span>
+            </button>
+            <!-- <span class="material-symbols-outlined" id="header__icon-login">login</span> -->
+        </div>
+    </header>
+
+    <!-- CUERPO PRINCIPAL DEL SITIO WEB -->
+
+    <main class="main checkout">
+
+        <h1 class="hero__title">Finalizar Compra</h1>
+        <section class="products" id="products-checkout">
+            <h2 class="products__title">Productos en carrito</h2>
+            <div class="products__list" id="products-list"></div>
+            <div class="products__total">
+                <p class="products__total-text">Total:</p>
+                <p class="products__total-amount" id="total-amount">$0.00</p>
+            </div>
+            <button class="products__button" id="vaciar-carrito" type="button">Vaciar Carrito</button>
+        </section>
+
+        <section class="form">
+            <h2 class="form__title">Datos Personales</h2>
+            <form class="form__container" id="form-container">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" required>
+
+                <button class="form__button" id = "form-button" type="submit">Finalizar Compra</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- PIE DEL SITIO WEB -->
+    
+    <footer class="footer">
+        <nav class="footer__nav">
+            <ul class="footer__nav-list">
+                <li class="footer__nav-item"><a class="footer__nav-link" href="">Contacto</a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="">Envíos</a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="">FAQs</a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="">Términos y Condiciones</a></li>
+            </ul>
+        </nav>
+        <p class="footer__copyright">© 2026 AAT. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- VINCULAR ARCHIVOS .JS -->
+    <script src="js/carrito.js"></script>
+    <script src="js/finalizar.js"></script>
+</body>
+</html>

@@ -24,7 +24,7 @@
         <div class="header__icons">
             <button type="button" class="header__contenedor-carrito" aria-label="Ver carrito de compras">
                 <span class="material-symbols-outlined" id="header__icon-cart">shopping_cart</span>
-                <span class="header__contador-carrito">0</span>
+                <span class="header__contador-carrito" id="contador-carrito">0</span>
             </button>
             <!-- <span class="material-symbols-outlined" id="header__icon-login">login</span> -->
         </div>
@@ -43,62 +43,8 @@
         <!-- PRODUCTOS -->
         <section class="products">
             <h2 class="products__title">Productos Destacados</h2>
-            <div class="products__container">
+            <div class="products__container" id="products-container">
 
-                <article class="card">
-                    <img class="card__image" src="imagenes/auriculares.jpg" alt="imagen de auriculares">
-                    <div class="card__content">
-                        <p class="card__brand">Sony</p>
-                        <h3 class="card__name">Auriculares Inalámbricos WH-100</h3>
-                        <p class="card__description">Bluetooth 5.0, cancelación de ruido y 30 horas de batería.</p>
-                        <p class="card__price">$89.999</p>
-                        <button class="card__button" type="button">Agregar al carrito</button>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <img class="card__image" src="imagenes/mouse.jpeg" alt="imagen de mouse">
-                    <div class="card__content">
-                        <p class="card__brand">Logitech</p>
-                        <h3 class="card__name">Mouse inalámbrico M170</h3>
-                        <p class="card__description">Conexión inalámbrica de 2,4 GHz, diseño ambidiestro y hasta 12 meses de batería.</p>
-                        <p class="card__price">$14.999</p>
-                        <button class="card__button" type="button">Agregar al carrito</button>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <img class="card__image" src="imagenes/celular.webp" alt="imagen de celular">
-                    <div class="card__content">
-                        <p class="card__brand">Samsung</p>
-                        <h3 class="card__name">Celular Galaxy A15</h3>
-                        <p class="card__description">Pantalla Super AMOLED de 6,5 pulgadas, cámara principal de 50 MP y batería de 5.000 mAh.</p>
-                        <p class="card__price">$299.999</p>
-                        <button class="card__button" type="button">Agregar al carrito</button>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <img class="card__image" src="imagenes/teclado.webp" alt="imagen de teclado">
-                    <div class="card__content">
-                        <p class="card__brand">Redragon</p>
-                        <h3 class="card__name">Teclado mecánico Kumara K552</h3>
-                        <p class="card__description">Formato compacto, switches mecánicos, iluminación RGB y estructura resistente.</p>
-                        <p class="card__price">$69.999</p>
-                        <button class="card__button" type="button">Agregar al carrito</button>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <img class="card__image" src="imagenes/monitor.webp" alt="imagen de monitor">
-                    <div class="card__content">
-                        <p class="card__brand">LG</p>
-                        <h3 class="card__name">Monitor Full HD de 24 pulgadas</h3>
-                        <p class="card__description">Panel IPS con resolución 1920 × 1080, colores nítidos y tecnología para reducir la fatiga visual.</p>
-                        <p class="card__price">$189.999</p>
-                        <button class="card__button" type="button">Agregar al carrito</button>
-                    </div>
-                </article>
             </div>
         </section>
 
@@ -156,9 +102,12 @@
         </nav>
         <p class="footer__copyright">© 2026 AAT. Todos los derechos reservados.</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- VINCULAR ARCHIVOS .JS -->
+    <script src="js/carrito.js"></script>
+    <!-- <script src="js/finalizar.js"></script> -->
+    <script src="js/productos.js"></script>
+    <script src="js/index.js"></script>
 </body>
-
-<footer>
-
-</footer>
 </html>

@@ -1,0 +1,93 @@
+/* LAYOUT PRINCIPAL DEL CHECKOUT (MOBILE FIRST: 1 COLUMNA) */
+
+.checkout {
+    flex: 1;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.checkout .hero__title {
+    text-align: center;
+}
+
+/* Quitamos el margin: 50px 0 que hereda de .products en styles.css */
+.checkout .products {
+    margin: 0;
+}
+
+.products__title, .form__title {
+    font-size: 2.5rem;
+}
+
+/* FILA DE CADA PRODUCTO EN EL CARRITO (para usar después desde finalizar.js) */
+
+.products__list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.products__item {
+    display: grid;
+    grid-template-columns: 60px 1fr auto auto;
+    align-items: center;
+    gap: 12px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1.5px solid #7af;
+    border-radius: 6px;
+}
+
+.products__button{
+    display:block;
+    width: 60%;
+    border-radius: 4px;
+    padding: 5px 0;
+    margin: auto;
+    margin-top: 10px;
+}
+
+/* FORMULARIO */
+
+.form__title{
+    justify-self: center;
+}
+
+.form__container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1.5px solid #7af;
+    border-radius: 6px;
+}
+
+.form__button{
+    width: 60%;
+    align-self: center;
+    border-radius: 4px;
+    padding: 5px 0;
+    margin-top: 10px;
+}
+
+/* ESCRITORIO: 2 COLUMNAS (mismo breakpoint que styles.css) */
+
+@media (min-width: 768px) {
+    .checkout {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    /* El h1 ocupa todo el ancho arriba de las 2 columnas */
+    .checkout .hero__title {
+        grid-column: 1 / -1;
+    }
+}
